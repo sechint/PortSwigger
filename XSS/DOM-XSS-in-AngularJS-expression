@@ -17,3 +17,9 @@
   $watch.constructor('alert()')()
 }}
 
+explanation: 
+    {{ }} — We already know these encapsulate an expression we want to execute in AngularJS.
+    $ — Let’s you know it’s part of the framework and not user defined.
+    on — Method provided by the framework.
+    .constructor — Property of an object that refers to the constructor function that created the object.
+    () — Calls the newly created function.
